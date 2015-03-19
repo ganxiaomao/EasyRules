@@ -1,0 +1,15 @@
+rule "ruletemplt10"
+if Temperature < 10
+then
+log ("Temperature is Less than 10! Its ${Temperature} !!!")
+end
+rule "ruletemplt5"
+if Temperature < 5
+then
+log ("Its too cold now! Temperature went down to ${Temperature} !!!")
+end
+rule "ruletempgt35"
+if Temperature >35
+then
+log ("Oh man its too hot! Temperature went up to ${Temperature} !!!")
+end
