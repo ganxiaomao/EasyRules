@@ -1,5 +1,6 @@
 package org.dsystems.rules.action;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -7,7 +8,7 @@ import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 
-public class ActionParser {
+public class ActionParser  implements Serializable{
 
 	final static Logger logger = Logger.getLogger(ActionParser.class);
 	public static List<IAction> parse(String actionsStr) {

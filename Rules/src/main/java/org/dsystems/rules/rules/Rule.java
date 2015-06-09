@@ -1,13 +1,14 @@
 package org.dsystems.rules.rules;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dsystems.rules.Utils.Record;
+import org.dsystems.utils.Record;
 import org.dsystems.rules.action.IAction;
 import org.dsystems.evaluator.ObjectEvaluator;
 
-public class Rule {
+public class Rule implements Serializable{
 
 	private String name;
 	private String expression;
@@ -71,6 +72,7 @@ public class Rule {
 		} catch (Exception e) {
 			System.out
 					.println("Rule runner throws excetion for Rule: " + name + " : Message: " + e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }

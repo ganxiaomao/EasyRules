@@ -1,6 +1,8 @@
 package org.dsystems.rules.Utils;
 
-public class Utils {
+import java.io.Serializable;
+
+public class Utils  implements Serializable{
 
 	public static boolean isNumeric(String str)  
 	{  

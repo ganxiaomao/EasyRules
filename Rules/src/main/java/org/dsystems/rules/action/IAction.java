@@ -1,12 +1,15 @@
 package org.dsystems.rules.action;
 
+import java.io.Serializable;
 import java.util.Properties;
 
 import org.apache.commons.lang3.text.StrSubstitutor;
-import org.dsystems.rules.Utils.Record;
+import org.dsystems.utils.Record;
 
-public abstract class IAction {
+public abstract class IAction  implements Serializable{
 
+
+	private static final long serialVersionUID = 1L;
 	protected String name;
 	protected Properties properties;
 	

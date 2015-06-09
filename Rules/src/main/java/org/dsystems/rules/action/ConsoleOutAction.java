@@ -1,10 +1,11 @@
 package org.dsystems.rules.action;
 
+import java.io.Serializable;
 import java.util.Properties;
 
-import org.dsystems.rules.Utils.Record;
+import org.dsystems.utils.Record;
 
-public class ConsoleOutAction extends IAction {
+public class ConsoleOutAction extends IAction  implements Serializable{
 
 	public ConsoleOutAction() {
 		this.properties = new Properties();

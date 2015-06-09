@@ -2,12 +2,13 @@ package org.dsystems.rules.engine;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.dsystems.rules.Utils.Record;
+import org.dsystems.utils.Record;
 import org.dsystems.rules.action.ActionConfig;
 import org.dsystems.rules.action.ActionFactory;
 import org.dsystems.rules.rules.Rule;
@@ -17,7 +18,7 @@ import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 
-public class RulesEngine {
+public class RulesEngine implements Serializable{
 
 	protected List<Rule> rules;
 	protected Map<String, ActionConfig> actionConfigs;

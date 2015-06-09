@@ -3,12 +3,13 @@ package org.dsystems.rules.action;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
-import org.dsystems.rules.Utils.Record;
+import org.dsystems.utils.Record;
 
-public class FileLogAction extends IAction {
+public class FileLogAction extends IAction  implements Serializable{
 	final static Logger logger = Logger.getLogger(FileLogAction.class);
 	
 	protected String fileName;

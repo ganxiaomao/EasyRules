@@ -1,10 +1,11 @@
 package org.dsystems.rules.parser;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class Parser {
+public class Parser  implements Serializable{
 
 	public Parser() {
 		

@@ -1,8 +1,10 @@
 package org.dsystems.rules.parser;
 
+import java.io.Serializable;
+
 import org.dsystems.rules.Utils.Utils;
 
-public class Tokenizer {
+public class Tokenizer  implements Serializable{
 
 	private String input;
 	private int current;

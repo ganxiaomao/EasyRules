@@ -1,6 +1,8 @@
 package org.dsystems.rules.parser;
 
-public enum TokenType {
+import java.io.Serializable;
+
+public enum TokenType  implements Serializable{
 	VARIABLE, 
 	CONSTANT_DECIMAL,
 	CONSTANT_STRING,

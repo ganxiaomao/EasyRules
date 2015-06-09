@@ -11,7 +11,7 @@
     "name": "filelogq",
     "className": "org.dsystems.rules.action.FileLogAction",
     "properties": {
-      "filename": "Alerts.log"
+      "filename": "Alerts2.log"
     }
   }
 ]

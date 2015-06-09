@@ -1,9 +1,12 @@
 package org.dsystems.rules.action;
 
+import java.io.Serializable;
 import java.util.Properties;
 
-public class ActionConfig {
+public class ActionConfig  implements Serializable{
 
+
+	private static final long serialVersionUID = 1L;
 	protected String name;
 	protected String className;
 	protected Properties properties;

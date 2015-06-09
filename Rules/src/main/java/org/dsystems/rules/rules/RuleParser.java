@@ -1,5 +1,6 @@
 package org.dsystems.rules.rules;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,7 +10,7 @@ import org.dsystems.rules.action.ActionParser;
 import org.dsystems.rules.action.IAction;
 import org.dsystems.rules.engine.RulesEngine;
 
-public class RuleParser {
+public class RuleParser  implements Serializable{
 	final static Logger logger = Logger.getLogger(RuleParser.class);
 	
 	public static Rule parse(String rulestr) {

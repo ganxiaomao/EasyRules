@@ -1,4 +1,4 @@
-import org.dsystems.rules.Utils.Record;
+import org.dsystems.utils.Record;
 import org.dsystems.rules.action.IAction;
 import org.dsystems.rules.action.ConsoleOutAction;
 import org.dsystems.rules.rules.Rule;

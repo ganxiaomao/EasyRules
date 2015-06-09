@@ -1,12 +1,13 @@
 package org.dsystems.rules.action;
 
+import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-public class ActionFactory {
+public class ActionFactory  implements Serializable{
 
 	private static Map<String, ActionConfig> actionConfigs;
 	final static Logger logger = Logger.getLogger(ActionFactory.class);

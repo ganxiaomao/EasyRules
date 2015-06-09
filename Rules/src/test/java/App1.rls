@@ -1,16 +1,19 @@
 rule "ruletemplt10"
-if Temperature < 10 && Temperature > 8
+if Temperature < 22 && Temperature > 18
 then
-log ("Temperature is Less than 10! Its ${Temperature} !!!")
-filelogq ("Temperature is Less than 10! Its ${Temperature} !!!")
+log ("Temperature is Less than 18! Its ${Temperature} !!!")
+filelogq ("Temperature is Less than 18! Its ${Temperature} !!!")
 end
+
+
 rule "ruletemplt5"
-if Temperature < 5
+if Temperature < 15
 then
 log ("Its too cold now! Temperature went down to ${Temperature} !!!")
 end
+
 rule "ruletempgt35"
-if Temperature >35 && Time == "Night"
+if Temperature > 35 && Location == "LOC1"
 then
 log ("Oh man its too hot! Temperature went up to ${Temperature} !!!")
 end
