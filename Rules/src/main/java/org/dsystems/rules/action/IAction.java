@@ -1,9 +1,13 @@
 package org.dsystems.rules.action;
 
 import java.io.Serializable;
+//import java.util.Map;
 import java.util.Properties;
 
+
 import org.apache.commons.lang3.text.StrSubstitutor;
+//import org.apache.commons.lang3.text.StrSubstitutor;
+import org.dsystems.utils.Utils;
 import org.dsystems.utils.Record;
 
 public abstract class IAction  implements Serializable{
@@ -26,8 +30,10 @@ public abstract class IAction  implements Serializable{
 	public abstract boolean init(Properties properties, String arguments);
 	
 	public String getMessage(String message, Record record) {
-		StrSubstitutor sub = new StrSubstitutor(record, "${", "}");
+		StrSubstitutor sub = new StrSubstitutor( record, "${", "}");
 		return sub.replace(message);
+		//return Utils.strSubstitute(message, "\\$\\{.*\\}", record.getRecord());
+		//return "Debug Message!!!";
 	}
 
 }

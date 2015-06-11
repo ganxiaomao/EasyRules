@@ -4,11 +4,14 @@ import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
+import org.dsystems.rules.action.ActionConfig;
 
 import org.apache.log4j.Logger;
 
 public class ActionFactory  implements Serializable{
 
+
+	private static final long serialVersionUID = 1L;
 	private static Map<String, ActionConfig> actionConfigs;
 	final static Logger logger = Logger.getLogger(ActionFactory.class);
 	
