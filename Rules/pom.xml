@@ -5,7 +5,7 @@
 	<artifactId>Rules</artifactId>
 	<version>0.0.1</version>
 	<name>Generic Rules Processor</name>
-	<description>Generic Rules Processor</description>
+	<description>Generic Rules Processor</description>	
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.commons</groupId>

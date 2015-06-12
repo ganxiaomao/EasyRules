@@ -1,0 +1,21 @@
+package org.dsystems.rules.expression;
+import java.util.List;
+
+import org.dsystems.rules.expression.*;
+import org.dsystems.rules.parser.Parser;
+import org.dsystems.rules.parser.Token;
+
+public class Evaluator {
+
+	private Evaluator() 
+	{}
+	/*public static org.dsystems.rules.expression.Expression getExpression(String expr) {
+		Parser p = new Parser();
+		List<Token> tokenList = p.parse(expr);
+		return generateExpression(tokenList);
+	}
+	private static org.dsystems.rules.Expression generateExpression(List<Token> tokenList) {
+		org.dsystems.rules.expression.Expression expr = null; 
+		return expr;
+	}*/
+}
