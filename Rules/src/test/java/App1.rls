@@ -13,7 +13,7 @@ log ("Its too cold now! Temperature went down to ${Temperature} !!!")
 end
 
 rule "ruletempgt35"
-if Temperature > 35 && Location == "LOC1"
+if Temperature > 35 && Time == "Morning"
 then
 log ("Oh man its too hot! Temperature went up to ${Temperature} !!!")
 end

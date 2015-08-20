@@ -88,6 +88,7 @@ public class RulesEngine implements Serializable{
 
 
 	public void run(Record record) {
+		if (record != null && record.size() > 0)
 		for(Rule rule: rules) {
 			rule.run(record);
 		}
